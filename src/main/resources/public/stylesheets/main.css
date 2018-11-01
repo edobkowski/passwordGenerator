@@ -1,0 +1,109 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background: #222222;
+}
+
+header {
+	width: 800px;
+	height: 70px;
+	float: left;
+	margin: 0 40px 20px 40px;
+	text-align: left;
+	padding: 10px 10px 3px 10px;
+	font-size: 28px;
+} 
+
+.container {
+	width: 900px;
+	margin: 15px auto; 
+	padding: 50px 30px 10px 30px;
+	background:#ffffff;
+	line-height:23px;
+	border:1px solid #dfdfdf;
+	border-radius:10px 10px;
+	word-wrap: break-word; 
+	overflow: hidden;
+}
+
+.select-tool {
+	width: 200px;
+}
+
+.box-left {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.box-right {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 580px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.password-section {
+	width: 900px;
+	float: left;
+}
+
+#password-box {
+	min-height: 30px;
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: justify;
+	font-size: 14px;
+	color: #008040;
+	clear: both;
+}
+
+.generate-btn {
+	margin: 0 5px 5px 220px;
+	padding: 0 0 0 0;
+	width: 185px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+}
+
+.generate-btn { 
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	font-family: arial,sans-serif;
+	color: #555;
+	text-shadow: 1px 1px 0px white;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,#ffffff 0%,#eee 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffffff),color-stop(100%,#eee));
+	background: -webkit-linear-gradient(top,#ffffff 0%,#eee 100%);
+	background: -o-linear-gradient(top,#ffffff 0%,#eee 100%);
+	background: -ms-linear-gradient(top,#ffffff 0%,#eee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f8f8f8',GradientType=0);
+	background: linear-gradient(top,#ffffff 0%,#eee 100%);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 3px 0px rgba(0,0,0,0.4);-webkit-box-shadow:0 1px 3px 0px rgba(0,0,0,0.4)
+	box-shadow: 0 1px 3px 0px rgba(0,0,0,0.4);
+	border: 1px #f8f8f8 solid;
+}
+
+.generate-btn:hover {
+	border: 1px #dadada solid;
+}
+
+.generate-btn:active {
+	margin: 1px 4px 4px 221px;
+}
