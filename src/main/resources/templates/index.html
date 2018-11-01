@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Password generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+
+<body>
+
+  <div class="container">
+      <header>
+        <h1>Secure Password Generator</h1>
+      </header>
+
+      <hr>
+
+      <section class="content">
+	    <form action="#" th:action="@{/}" th:object="${passwordSetup}" method="post">
+	    	<label class="box-left">Password Length:</label>
+		    	<div class="box-right">
+		    	<select class="select-tool" th:field="*{length}">
+		    		<option value="6" label="6"></option>
+		    		<option value="8" label="8"></option>
+		    		<option value="10" label="10"></option>
+		    		<option value="16" label="16"></option>
+		    		<option value="32" label="32"></option>
+		    		<option value="64" label="64"></option>
+		    		<option value="128" label="128"></option>
+		    		<option value="256" label="256"></option>
+		    		<option value="512" label="512"></option>
+		    		<option value="1024" label="1024"></option>
+		    	</select>
+	    	</div>	<br>
+	    	<label class="box-left">Include symbols:</label>
+	        <div  class="box-right" ><input type="checkbox" th:field="*{symbols}" /> ( e.g. @#$% )		</div>	<br>
+	    	<label class="box-left">Include numbers:</label>
+	        <div  class="box-right" ><input type="checkbox" th:field="*{numbers}" /> ( e.g.123456 )		</div>	<br>
+	    	<label class="box-left">Include lowercase characters:</label>
+	        <div  class="box-right" ><input type="checkbox" th:field="*{lowercase}" /> ( e.g.abcdefgh )	</div>	<br>
+	    	<label class="box-left">Include uppercase characters:</label>
+	        <div  class="box-right" ><input type="checkbox" th:field="*{uppercase}" /> ( e.g.ABCDEFGH )	</div>	<br>
+
+			<br>
+			<input class="generate-btn"  type="submit" value="generate">
+	    </form>
+
+        <div class="password-section">
+          <div class="box-left">
+            Your New Password:
+          </div>
+
+          <div th:text="${password}" id="password-box">
+          </div>
+        </div>
+
+      </section>
+      
+   </div>
+</body>
+</html>
